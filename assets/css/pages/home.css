@@ -115,12 +115,13 @@ input:focus,
   background-image: url(../../images/marketing-shape.png);
   background-position: center center;
 }
-.title-box span,
+
 .title-box h2 {
   display: inline-block;
   position: relative;
   padding-bottom: 12px;
   font-size: 18px;
+  font-weight: 300;
 }
 .title-box {
   position: relative;
@@ -132,7 +133,7 @@ input:focus,
   padding: 0 26px;
   text-align: center;
 }
-.title-box span:before,
+
 .title-box h2:before {
   content: "";
   position: absolute;
@@ -145,7 +146,6 @@ input:focus,
   background-color: var(--color-org);
 }
 
-.title-box span:after,
 .title-box h2:after {
   content: "";
   position: absolute;

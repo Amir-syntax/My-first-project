@@ -1,0 +1,30 @@
+.btn-dark {
+  display: inline-block;
+  border: 2px solid black;
+  padding: 9px;
+  border-radius: 7px;
+  background-color: var(--color-btn-dark);
+  color: var(--color-surface);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.btn-dark:hover {
+  color: rgb(23, 30, 61);
+  background-color: var(--color-btn-h-dark);
+}
+.btn-light {
+  display: inline-block;
+  border: 2px solid rgb(212, 239, 255);
+  padding: 9px;
+  border-radius: 7px;
+  background-color: var(--color-btn-light);
+  color: rgb(20, 49, 82);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.btn-light:hover {
+  background-color: var(--color-btn-h-light);
+  color: var(--color-surface);
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amir-syntax.github.io/My-first-project/sitemap.xml

@@ -1,7 +1,44 @@
 body {
   font-family: var(--font-main);
   font-weight: 400;
-  background-color: aliceblue;
+  background-color: var(--color-bg);
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #0f172a;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 8px;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+a:focus,
+button:focus,
+.btn-dark:focus,
+.btn-light:focus,
+input:focus,
+.btn-dl:focus {
+  outline: 3px solid var(--color-org);
+  outline-offset: 2px;
 }
 
 .main-content {
@@ -163,7 +200,7 @@ section.services .item p {
 section.services .item .pos-item {
   position: absolute;
   width: 100%;
-  height: 70%;
+  height: 55%;
   background-color: #21aeea9c;
   top: -80px;
   right: 0;
@@ -524,10 +561,10 @@ section.contact-app .item-right span.btn-dl {
   margin-bottom: 15px;
 }
 
-section.contact-app .item-right span.btn-dl span.download-app {
+.download-app {
   display: inline-block;
   padding: 3px 10px;
-  color: #eee;
+  color: var(--color-surface);
   background-color: var(--color-org);
   border-radius: 20px;
 }

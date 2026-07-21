@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
     <section class="top">
       <script src="assets/js/main.js"></script>
       <nav class="main-menu">
@@ -40,9 +41,10 @@
           <li>
             <a
               href="https://github.com/Amir-syntax"
-              aria-label="اینستاگرام"
+              aria-label="گیت هاب"
               data-label="گیت هاب"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i class="fa fa-github"></i>
             </a>
@@ -53,6 +55,7 @@
               aria-label="تلگرام"
               data-label="تلگرام"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i class="fa fa-telegram"></i>
             </a>
@@ -63,25 +66,29 @@
               aria-label="لینکدین"
               data-label="لینکدین"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i class="fa fa-linkedin"></i>
             </a>
           </li>
           <li>
-            <a href="" aria-label="توییتر" data-label="توییتر">
+            <a href="#" aria-label="توییتر" data-label="توییتر">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         </ul>
       </div>
       <div class="main-content">
-        <section class="top-warp">
-          <img src="assets/images/marketing.png" alt="" />
-          <div class="btns-box">
-            <a href="#" class="btn-dark">تماس با ما</a>
-            <a href="#" class="btn-light">دانلود اپلیکیشن</a>
-          </div>
-        </section>
+        <h1 class="sr-only">دیجیتال مارکتینگ</h1>
+        <main id="main">
+          <section class="top-warp">
+            <img src="assets/images/marketing.png" alt="" />
+            <div class="btns-box">
+              <a href="#" class="btn-dark">تماس با ما</a>
+              <a href="#" class="btn-light">دانلود اپلیکیشن</a>
+            </div>
+          </section>
+        </main>
       </div>
     </section>
     <section class="services">
@@ -92,25 +99,25 @@
         <div class="item">
           <div class="pos-item"></div>
           <img src="assets/images/svg/Asset187.svg" alt="" />
-          <h4>دسترسی همیشگی به فایل های برنامه</h4>
+          <h3>دسترسی همیشگی به فایل های برنامه</h3>
           <p>با این اپلیکیشن نیازی به پرداخت های ماهانه ندارید</p>
         </div>
         <div class="item">
           <div class="pos-item"></div>
           <img src="assets/images/svg/Asset189.svg" alt="" />
-          <h4>بدون نیاز به پرداخت درون برنامه ای و دانلود آنی</h4>
+          <h3>بدون نیاز به پرداخت درون برنامه ای و دانلود آنی</h3>
           <p>تمای فایل های بعدی بدون پرداخت هزینه و دریافت به شکل رایگان</p>
         </div>
         <div class="item">
           <div class="pos-item"></div>
           <img src="assets/images/svg/Asset190.svg" alt="" />
-          <h4>امکان دانلود و نصب فایل های آپدیت به شکل مجزا</h4>
+          <h3>امکان دانلود و نصب فایل های آپدیت به شکل مجزا</h3>
           <p>بدین ترتیب نیازی به نصب برنامه کامل از ابتدا ندارید</p>
         </div>
         <div class="item">
           <div class="pos-item"></div>
           <img src="assets/images/svg/Asset192.svg" alt="" />
-          <h4>امکان متن باز بودن و تغییر در هسته اصلی برنامه</h4>
+          <h3>امکان متن باز بودن و تغییر در هسته اصلی برنامه</h3>
           <p>می توانید به راحتی تغییرات خود را در داخل برنامه لحاظ کنید</p>
         </div>
       </div>
@@ -125,11 +132,22 @@
           <form action="">
             <img src="assets/images/svg/faq.svg" alt="" />
             <div class="form-input">
-              <input type="text" placeholder="نام شما" />
+              <label class="sr-only" for="contact-name">نام شما</label>
+              <input
+                id="contact-name"
+                name="contact-name"
+                type="text"
+                placeholder="نام شما"
+              />
               <span><i class="fa fa-user"></i></span>
             </div>
             <div class="form-input">
-              <input type="text" placeholder="شماره تماس" />
+              <label class="sr-only" for="contact-phone">شماره تماس</label>
+              <input
+                id="contact-phone"
+                name="contact-phone"
+                placeholder="شماره تماس"
+              />
               <span><i class="fa fa-phone"></i></span>
             </div>
             <button type="submit" class="btn-light">ارسال</button>
@@ -169,7 +187,7 @@
     </section>
     <br /><br /><br /><br />
     <div class="title-box">
-      <span>کدام پلن را انتخاب میکنید؟</span>
+      <h2>کدام پلن را انتخاب میکنید؟</h2>
     </div>
     <div class="main-content">
       <section>
@@ -231,11 +249,17 @@
     <section class="contact-app section-style">
       <div class="main-content">
         <div class="item-right">
-          <span class="btn-dl">
+          <a
+            href="#"
+            class="btn-dl"
+            role="button"
+            aria-label="دانلود اپلیکیشن"
+            tabindex="0"
+          >
             <span class="download-text">دانلود</span>
             <span class="download-app">اپ</span>
-          </span>
-          <h4>همین حالا رایگان دانلود کنید</h4>
+          </a>
+          <h3>همین حالا رایگان دانلود کنید</h3>
           <p>
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در

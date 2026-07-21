@@ -565,7 +565,7 @@ section.contact-app .item-right span.btn-dl {
   display: inline-block;
   padding: 3px 10px;
   color: var(--color-surface);
-  background-color: var(--color-org);
+  background-color: #1769aa;
   border-radius: 20px;
 }
 
